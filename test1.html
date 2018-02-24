@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js">
+    var json={
+        capability:{
+            advertisingId:null,
+            androidId:'448a5b2149421858',
+            bundleId:'com.denachina.g13002001.denacn',
+            versionCode:'2.0.2',
+            mac:'44:8A:5B:21:49:42',
+            uuid:null,
+            idfa:'134699cc',
+            deviceId:16,
+            sdkVersion:'1.0.0',
+            ip:'172.17.100.15'
+        },
+        credential:{
+            "loginMethod":"pwd",
+            "credential":{
+                "account":"1003998924",
+                "password":"YXNkMTIz"
+            }
+        }
+    }
+    $.ajax({
+        url:"https://store-prod-cn-live.mobage.cn/cn/account/login",
+        data:{
+            capability:{
+                advertisingId:null,
+                androidId:'448a5b2149421858',
+                bundleId:'com.denachina.g13002001.denacn',
+                versionCode:'2.0.2',
+                mac:'44:8A:5B:21:49:42',
+                uuid:null,
+                idfa:'134699cc',
+                deviceId:16,
+                sdkVersion:'1.0.0',
+                ip:'172.17.100.15'
+            },
+            credential:{
+                "loginMethod":"pwd",
+                "credential":{
+                    "account":"1003998924",
+                    "password":"YXNkMTIz"
+                }
+            }
+        },
+        dataType:"json",
+        Type:"POST",
+        success:function (data) {
+            console.log(data)
+        }
+    })
+</script>
+</html>
